@@ -1,0 +1,34 @@
+	@import '../var.less';
+	.position-list{
+		padding:0px 3px;
+		.item{
+			border-bottom: 1px solid @listLineColr;
+			padding:7px 0;
+			.logo{
+				.w(100);
+				.h(120);
+				margin-right: 13px;
+			}
+			.title{
+				margin:0;
+			}
+			.text{
+				margin:0;
+			}
+			.icon{
+				.w(100);
+				.h(100);
+				right: 20px;
+				top:10px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				// background-image:url(../image/star.png);
+				&.star{
+					background-image: url(../image/star.png);
+				}
+				&.star-active{
+					background-image: url(../image/star-active.png);
+				}
+			}
+		}
+	}

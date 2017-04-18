@@ -1,0 +1,6 @@
+	<div class="bg-w position-info p-r">
+		<p><span class='mr'ng-bind="pos.name"></span><span class='c-r'ng-bind="pos.salaryName"></span></p>
+		<p><span class='mr' ng-bind="pos.cityName"></span><span ng-bind="pos.experience"></span><span ng-bind="pos.eduction"></span></p>
+		<p ng-bind="pos.benefit"></p>
+		<img ng-show="isLogin" ng-click="favorite()" class='p-a angel' ng-src={{pos.select?'image/star-active.png':'image/star.png'}} alt="">
+	</div>

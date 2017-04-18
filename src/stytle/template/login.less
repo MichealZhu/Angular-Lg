@@ -1,0 +1,80 @@
+	@import '../var.less';
+	.login{
+		background-size: 100% 100%;
+		background:url(../image/background.png) no-repeat;
+		position:fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		form{
+			.mt(260);
+			.form-line{
+				font-size: 0;
+				.w(600);
+				.h(80);
+				.lh(80);
+				&:first-child{
+					border-bottom: 1px solid @defaultColor;
+				}
+				margin-left: auto;
+				margin-right: auto;
+				background-color: @formBgColor;
+				.account{
+					background:url(../image/account.png) no-repeat;
+					.w(60);
+					.h(80);
+				}
+				.lock{
+					background:url(../image/lock.png) no-repeat;
+					.w(60);
+					.h(80);
+				}
+				input{
+					.w(510);
+					.fs(14);
+					.pl(30);
+					background-color:@formBgColor;
+					height: 100%;
+					border-width: 0;
+					outline-width: 0;
+					&::-webkit-input-placeholder{
+					color:@defaultColor;
+					}
+					vertical-align: top;
+					&.ng-invalid{
+						&+span{
+							position: absolute;
+							color:red;
+							right:0;
+							height: 100%;
+							font-size: 12px;
+							text-align: right;
+							p{
+								margin:0;
+							}
+						}
+					}
+				}
+			}
+			button{
+				.w(600);
+				.h(60);
+				&.login-btn{
+					background-color:@headBgColor;
+					color:@defaultColor;
+					margin-top: 75px;
+					font-weight: bold;
+					font-size: 15px;
+				}
+				&.reg-btn{
+					background-color: #fff;
+					margin-top: 20px;
+					font-weight: bold;
+					font-size: 15px;
+					background-color: @btnBgColor;
+					border: 1px solid @headBgColor;
+				}
+			}
+		}
+	}

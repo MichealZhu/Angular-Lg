@@ -1,0 +1,36 @@
+	@import '../var.less';
+	.me{
+		img{
+			.mt(60);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.name{
+			.mt(25);
+		}
+		.btns{
+			.mt(40);
+			button{
+				.w(300);
+				.h(200);
+				background-color: @headBgColor;
+				color:@defaultColor;
+				.fs(16);
+				.mr(20);
+				&.logout{
+					.mt(20);
+					.w(600);
+					.h(150);
+					background-color: @dangerColor;
+				}
+			}
+		}
+		.login-btn{
+			.mt(400);
+			width:80%;
+			.h(100);
+			background-color:@headBgColor;
+			color:@defaultColor;
+		}
+	}
+	
